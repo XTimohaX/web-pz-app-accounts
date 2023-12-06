@@ -17,7 +17,7 @@ const Profile: React.FC = () => {
             .catch(error => {
                 console.log(error)
             })
-    })
+    },[])
 
     return (
         <div className="page_Profile">
@@ -32,8 +32,8 @@ const Profile: React.FC = () => {
                     <p className="text" >Account Name:{post?.accountName}</p>
                     <p className="text" >E-mail:{post?.email}</p>
                     <p className="text" >Status:{post?.status}</p>
-                    <p className="text" >Start Date:{post?.startDate}</p>
-                    <p className="text" >Expiration Date:{post?.expirationDate}</p>
+                    <p className="text" >Start Date:{post?.startDate.toLocaleDateString()}</p>
+                    <p className="text" >Expiration Date:{post?.expirationDate.toLocaleDateString()}</p>
 
 
 

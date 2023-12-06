@@ -97,7 +97,7 @@ const ModalWindEdit: FC<IPostAccount> = ({oldPost}) => {
                             <h3 className="inpName">Start date</h3>
                             <div className="date">
 
-                                <input type="text" value={post.startDate} onChange={(e)=>setPost({...post, startDate:Number(e.target.value)})} />
+                                <input type="date"  onChange={(e)=>setPost({...post, startDate:new Date(e.target.value)})} />
                                 <img className="cal"
                                      src={calendar}
                                      alt=""/>
@@ -108,7 +108,7 @@ const ModalWindEdit: FC<IPostAccount> = ({oldPost}) => {
                             <h3 className="inpName">Expiration date</h3>
                             <div>
 
-                                <input type="text" value={post.expirationDate} onChange={(e)=>setPost({...post, expirationDate:Number(e.target.value)})}/>
+                                <input type="date"  onChange={(e)=>setPost({...post, expirationDate:new Date(e.target.value)})}/>
                                 <img className="cal"
                                      src={calendar}
                                      alt=""/>

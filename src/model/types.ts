@@ -4,6 +4,6 @@ export type PostAccount = {
     accountName: string;
     email: string;
     status: string;
-    startDate: number;
-    expirationDate: number;
+    startDate: Date;
+    expirationDate: Date;
 }

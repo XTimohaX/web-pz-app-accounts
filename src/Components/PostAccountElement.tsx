@@ -27,10 +27,10 @@ const PostAccountElement: FC<MyComponentProps> = ({postAccount }) => {
             <div className="meanAc">{postAccount.accountName}</div>
             <div className="meanEmail">{postAccount.email}</div>
             <div className="status">
-                <p className="meanStatus">{postAccount.status}</p>
+                {postAccount.status}
             </div>
-            <div className="meanStartDate">{postAccount.startDate}</div>
-            <div className="meanExpirationDate">{postAccount.expirationDate}</div>
+            <div className="meanStartDate">{JSON.stringify(postAccount.startDate).split("T")[0]}</div>
+            <div className="meanExpirationDate">{JSON.stringify(postAccount.expirationDate).split("T")[0]}</div>
             <div className="func">
             <ModalWindEdit oldPost={postAccount} />
                 <div  className="delete" onClick={() => deletePost()}>

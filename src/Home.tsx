@@ -9,9 +9,10 @@ const Home = () => {
     const [posts, setPosts] = useState([] as PostAccount[])
 
     useEffect(() => {
-        axios.get("http://localhost:3000/post")
+        axios.get<PostAccount[]>("http://localhost:3000/post")
             .then(res => {
                 setPosts(res.data)
+
             })
             .catch(error => {
                 console.log(error)
