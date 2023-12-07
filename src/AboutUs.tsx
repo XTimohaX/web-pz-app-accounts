@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import Header from "./Components/Header";
-import {Anchor, Row, Col} from 'antd';
 
 const AboutUs = () => {
 

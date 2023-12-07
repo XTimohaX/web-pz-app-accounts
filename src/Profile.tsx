@@ -32,8 +32,8 @@ const Profile: React.FC = () => {
                     <p className="text" >Account Name:{post?.accountName}</p>
                     <p className="text" >E-mail:{post?.email}</p>
                     <p className="text" >Status:{post?.status}</p>
-                    <p className="text" >Start Date:{post?.startDate.toLocaleDateString()}</p>
-                    <p className="text" >Expiration Date:{post?.expirationDate.toLocaleDateString()}</p>
+                    <p className="text" >Start Date:{JSON.stringify(post?.startDate).split("T")[0]}</p>
+                    <p className="text" >Expiration Date:{JSON.stringify(post?.expirationDate).split("T")[0]}</p>
 
 
 

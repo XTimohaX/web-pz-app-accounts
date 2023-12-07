@@ -9,7 +9,7 @@ body, html, #root {
 }
 
 .header {
-    background: #565657;
+    background: grey;
     height: 50px;
     align-items: center;
     display: flex;
@@ -359,13 +359,16 @@ select option:checked {
     display: flex;
 }
 .text_Content{
-    font-size: 30px;
-    margin: 0 auto;
-    width: 400px;
+
+  font-size: 30px;
+  right: 300px;
+  width: 400px;
+  position: absolute;
 }
 .menu{
-    margin-left: 300px;
-    font-size: 40px;
+  position: fixed;
+    margin-left: 700px;
+    font-size: 30px;
     width: max-content;
 
 }
@@ -375,4 +378,8 @@ select option:checked {
 
 *{
     scroll-behavior: smooth;
+}
+a{
+  text-decoration:none;
+  color: black;
 }
