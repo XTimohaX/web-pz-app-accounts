@@ -9,7 +9,7 @@ body, html, #root {
 }
 
 .header {
-    background: grey;
+    background: red;
     height: 50px;
     align-items: center;
     display: flex;
